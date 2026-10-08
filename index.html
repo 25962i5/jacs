@@ -83,6 +83,7 @@ First HECoS code in data: ${DATA[0]?.hecosCode || 'none'}`;
             ${row.jacsLabel ? `<span class="pill">${escapeHtml(row.jacsLabel)}</span>` : ''}
           </div>
           <button type="button" data-copy="${escapeHtml(row.jacsCode)}">Copy JACS code</button>
+          <button type="button" data-copy="${escapeHtml(row.hecosLabel)}">Copy title</button>
         </article>`;
       }).join('');
       result.classList.remove('hidden');
